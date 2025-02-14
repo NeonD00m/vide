@@ -1,12 +1,14 @@
-name = "alicesaidhi/vide"
-version = "0.3.1-lite.656"
-description = "vide with types"
+name = "neond00m/vide_typed"
+version = "0.3.1"
+description = "vide with types and camel case"
 authors = ["centau"]
-repository = "https://github.com/centau/vide"
+repository = "https://github.com/neond00m/vide"
 license = "MIT"
 
 [target]
 environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
 
 [scripts]
 roblox_sync_config_generator = ".pesde/roblox_sync_config_generator.luau"

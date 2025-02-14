@@ -67,6 +67,7 @@ export type vCanvasGroup = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vCanvasGroup>
 
@@ -132,6 +133,7 @@ export type vFrame = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vFrame>
 
@@ -220,6 +222,7 @@ export type vImageButton = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vImageButton>
 
@@ -313,6 +316,7 @@ export type vTextButton = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vTextButton>
 
@@ -388,6 +392,7 @@ export type vImageLabel = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vImageLabel>
 
@@ -470,6 +475,7 @@ export type vTextLabel = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vTextLabel>
 
@@ -549,6 +555,7 @@ export type vScrollingFrame = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vScrollingFrame>
 
@@ -642,6 +649,7 @@ export type vTextBox = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vTextBox>
 
@@ -716,6 +724,7 @@ export type vVideoFrame = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vVideoFrame>
 
@@ -786,6 +795,7 @@ export type vViewportFrame = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vViewportFrame>
 
@@ -829,6 +839,7 @@ export type vBillboardGui = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vBillboardGui>
 
@@ -860,6 +871,7 @@ export type vScreenGui = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vScreenGui>
 
@@ -892,6 +904,7 @@ export type vAdGui = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vAdGui>
 
@@ -931,6 +944,7 @@ export type vSurfaceGui = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vSurfaceGui>
 
@@ -953,6 +967,7 @@ export type vSelectionBox = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vSelectionBox>
 
@@ -982,6 +997,7 @@ export type vBoxHandleAdornment = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vBoxHandleAdornment>
 
@@ -1012,6 +1028,7 @@ export type vConeHandleAdornment = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vConeHandleAdornment>
 
@@ -1044,6 +1061,7 @@ export type vCylinderHandleAdornment = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vCylinderHandleAdornment>
 
@@ -1074,6 +1092,7 @@ export type vImageHandleAdornment = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vImageHandleAdornment>
 
@@ -1104,6 +1123,7 @@ export type vLineHandleAdornment = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vLineHandleAdornment>
 
@@ -1133,6 +1153,7 @@ export type vSphereHandleAdornment = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vSphereHandleAdornment>
 
@@ -1162,6 +1183,7 @@ export type vWireframeHandleAdornment = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vWireframeHandleAdornment>
 
@@ -1181,6 +1203,7 @@ export type vParabolaAdornment = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vParabolaAdornment>
 
@@ -1202,6 +1225,7 @@ export type vSelectionSphere = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vSelectionSphere>
 
@@ -1227,6 +1251,7 @@ export type vArcHandles = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vArcHandles>
 
@@ -1253,6 +1278,7 @@ export type vHandles = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vHandles>
 
@@ -1273,6 +1299,7 @@ export type vSurfaceSelection = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vSurfaceSelection>
 
@@ -1294,6 +1321,7 @@ export type vPath2D = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vPath2D>
 
@@ -1312,6 +1340,7 @@ export type vUIAspectRatioConstraint = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUIAspectRatioConstraint>
 
@@ -1329,6 +1358,7 @@ export type vUISizeConstraint = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUISizeConstraint>
 
@@ -1346,6 +1376,7 @@ export type vUITextSizeConstraint = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUITextSizeConstraint>
 
@@ -1362,6 +1393,7 @@ export type vUICorner = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUICorner>
 
@@ -1400,6 +1432,7 @@ export type vUIDragDetector = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUIDragDetector>
 
@@ -1419,6 +1452,7 @@ export type vUIFlexItem = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUIFlexItem>
 
@@ -1439,6 +1473,7 @@ export type vUIGradient = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUIGradient>
 
@@ -1463,6 +1498,7 @@ export type vUIListLayout = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUIListLayout>
 
@@ -1486,6 +1522,7 @@ export type vUIGridLayout = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUIGridLayout>
 
@@ -1517,6 +1554,7 @@ export type vUIPageLayout = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUIPageLayout>
 
@@ -1540,6 +1578,7 @@ export type vUITableLayout = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUITableLayout>
 
@@ -1559,6 +1598,7 @@ export type vUIPadding = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUIPadding>
 
@@ -1575,6 +1615,7 @@ export type vUIScale = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUIScale>
 
@@ -1596,6 +1637,7 @@ export type vUIStroke = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vUIStroke>
 
@@ -1614,6 +1656,7 @@ export type vWorldModel = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vWorldModel>
 
@@ -1641,6 +1684,7 @@ export type vCamera = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vCamera>
 
@@ -1692,6 +1736,7 @@ export type vPart = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vPart>
 
@@ -1710,6 +1755,7 @@ export type vModel = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vModel>
 
@@ -1762,6 +1808,7 @@ export type vMeshPart = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vMeshPart>
 
@@ -1784,6 +1831,7 @@ export type vHighlight = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vHighlight>
 
@@ -1799,6 +1847,7 @@ export type vFolder = {
 	DescendantAdded: e<(descendant:Instance?) -> ()>,
 	DescendantRemoving: e<(descendant:Instance?) -> ()>,
 	Destroying: e<() -> ()>,
+	StyledPropertiesChanged: e<() -> ()>,
 	Changed: e<(property:string | number) -> ()>,
 	[number]: c<vFolder>
 
