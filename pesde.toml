@@ -1,5 +1,5 @@
 name = "neond00m/vide_typed"
-version = "0.3.1"
+version = "0.3.1-test.1"
 description = "vide with types and camel case"
 authors = ["centau"]
 repository = "https://github.com/neond00m/vide"
